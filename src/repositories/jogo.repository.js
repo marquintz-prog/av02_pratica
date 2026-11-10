@@ -4,17 +4,17 @@ import { knex } from "../database/knex.js";
 class jogoRepository {
 
     async getAll() {
-        const jogos = await knex("jogos").select("*");
+        const jogos = await knex("Jogos").select("*");
         return jogos;
     }
 
     async getById(id) {
-        const jogo = await knex("jogos").where({ id }).first();
+        const jogo = await knex("Jogos").where({ id }).first();
         return jogo;
     }
 
     async create(dados) {
-        const jogo = await knex("jogos")
+        const jogo = await knex("Jogos")
             .insert(dados)
             .returning("*");
 
@@ -22,7 +22,7 @@ class jogoRepository {
     }
 
     async update(id, dados) {
-        const jogo = await knex("jogos")
+        const jogo = await knex("Jogos")
             .where({ id })
             .update(dados)
             .returning("*");
@@ -31,7 +31,7 @@ class jogoRepository {
     }
 
     async delete(id) {
-        const jogo = await knex("jogos")
+        const jogo = await knex("Jogos")
             .where({ id })
             .delete()
             .returning("*");
