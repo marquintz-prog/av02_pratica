@@ -14,9 +14,9 @@ class JogosServices {
         return JogoRepository.create(dados)
     }
 
-    async update(id) {
+    async update(id, dados) {
 
-        return JogoRepository.update(id)
+        return JogoRepository.update(id, dados)
     }
 
     async delete(id) {
