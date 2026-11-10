@@ -1,5 +1,5 @@
 
-import { JogoRepository } from "../repository/jogo.repository.js";
+import { JogoRepository } from "../repositories/jogo.repository.js";
 
 class JogosServices {
     async getall() {
@@ -25,4 +25,4 @@ class JogosServices {
     }
 }
 
-export const JogosServices= new JogosServices();
+export const jogosServices= new JogosServices();

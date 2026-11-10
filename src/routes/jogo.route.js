@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { jogosController } from '../controllers/jogos.controller.js';
+import { jogoController } from '../controllers/jogo.controller.js';
 
 export const jogosRouter = Router();
 
-jogosRouter.get('/', jogosController.getAll);
-jogosRouter.get('/:id', jogosController.getById);
-jogosRouter.post('/', jogosController.create);
-jogosRouter.put('/:id', jogosController.update);
-jogosRouter.delete('/:id', jogosController.delete);
+jogosRouter.get('/', jogoController.getAll);
+jogosRouter.get('/:id', jogoController.getById);
+jogosRouter.post('/', jogoController.create);
+jogosRouter.put('/:id', jogoController.update);
+jogosRouter.delete('/:id', jogoController.delete);

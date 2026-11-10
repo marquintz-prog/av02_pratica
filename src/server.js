@@ -1,5 +1,5 @@
 import express from 'express'
-import { jogosRouter } from "./routes/jogos.routes.js";
+import { jogosRouter } from "./routes/jogo.route.js";
 
 const server = express()
 

@@ -1,4 +1,4 @@
-import { knex } from "../config/knex.js";
+import { knex } from "../database/knex.js";
 
 class jogoRepository {
 
